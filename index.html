@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog | scroller</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Blog">
+        <meta name="keywords" content="">
+        <meta name="author" content="Timo Vossen">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <link href="css/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        
+        <!--- Header --->
+        
+        <div class="header_wrapper">
+            <div class="header">
+                <div class="sides">
+                    <a href="https://blog.timovossen.nl/" class="logo"><img src="assets/Mark_wit.png" /></a>
+                    <p class="header_logo_text">Terug naar het overzicht.</p>
+                </div>
+                <div class="sides"></div>
+                <div class="info">
+                    <h1>Data every designer should know</h1>
+                    <h4 class="highlight">Een korte introductie in data driven design.</h4>
+                    <div class="meta">
+                        <a  href="https://timovossen.nl" target="_b" class="author"></a><br> Door Timo Vossen op 6 mei, 2020
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <!--- Begin content container --->
+        
+        <div class="container">
+            
+            <!--- Side bar --->
+            
+            <aside class="table-of-contents"> </aside>
+            
+            <!--- Content --->
+            
+            <main class="post-content">
+                <section class="row" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+                    <div class="col-12">
+                        <p class="title">Inleiding</p>
+                        <p>
+                            Voor iedereen die geen technische achtergrond heeft lijkt het soms lastig wat je met de term ‘data’ moet. Je weet ongeveer wel waar het voor staat en dat het overal gebruikt wordt, maar je hebt geen idee wat jij er mee moet. Dit hoeft niet zo te zijn! In dit artikel wil ik je de absolute basis leren over data in design. Met als doel dat ook jij als designer data kan gebruiken als onderdeel van je project.
+                        </p>
+                        <p class="meta2">De leestijd van dit artikel is ongeveer <strong class="highlight2">35 minuten</strong> lang.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" class="col-12"> 
+                            <h2>Voordat we beginnen</h2>
+                            <p>Werken met data kan heel technisch zijn. Ik ga proberen je een basis te geven zonder al te technisch te worden.</p>
+                            <strong>Dit is wat ik je absoluut voor nu nog <strong style="color: red">niet</strong> ga leren:</strong>
+                            <ul class="list negative">
+                                <li>Hoe de neuronen in zelflerende algoritmes werken.</li>
+                                <li>Dat je met de volgende code een API kan inladen in Python:</li>
+                            </ul>
+                            <script src="https://gist.github.com/TimoVssn/3e41e14e9ac288790e4febd4ab6615b7.js"></script>
+                            <ul class="list negative">
+                                <li>Deze zin is uit de wet Algemene Verordening Gegevensbescherming:</li>
+                            </ul>
+                            <blockquote>
+                                <p>“Toestemming dient te worden gegeven door middel van een duidelijke actieve handeling, bijvoorbeeld een schriftelijke verklaring, ook met elektronische middelen, of een mondelinge verklaring, waaruit blijkt dat de betrokkene vrijelijk, specifiek, geïnformeerd en ondubbelzinnig met de verwerking van zijn persoonsgegevens instemt.” – Overweging 32 AVG</p>
+                            </blockquote>
+                            <p>Lijken dit jou nou onderwerpen waar je wel meer vanaf wilt weten? Dan heb ik aan het einde een lijst met mogelijke vervolgstappen.</p>
+                            <strong>Maar dan: waar we het in dit artikel <strong style="color: green">wel</strong> over gaan hebben:</strong>
+                            <ul class="list positive">
+                                <li>Je hoort het overal om je heen, maar wat is data eigenlijk precies?</li>
+                                <li>Waarom zou ik als designer iets met data moeten?</li>
+                                <li>Praktische voorbeelden van data driven design.</li>
+                                <li>Hoe kan ik laagdrempelig aan de slag met data?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" class="col-12"> 
+                            <h2>Wat is data?</h2>
+                            <p>Als een echte data driven designer is de eerste stap in welke situatie dan ook om het aan mijn Google Home Mini te vragen.</p>
+                            <blockquote>
+                                <p>Oké google, what is the definition of data?</p>
+                                <pre>“Facts and statistics collected together for reference or analysis.”</pre>
+                            </blockquote>
+                            <p>Wat hier eigenlijk staat is dat data een verzameling van gegevens is dat gebruikt wordt om besluiten te nemen.</p>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+                                <strong>Data woordenboek</strong>
+                                <p>In de wereld van data driven design vliegen de grote fancy Engelse termen je om de oren. Gelukkig zijn wij ‘designers’ daar wel aan gewend. Zeker als je een studie doet met de naam Communication and Multimedia Design✨. Om je toch een beetje een houvast te geven, hierbij een korte lijst van termen uit de wereld van data:</p>
+                                <p><----Woordenboek-----></p>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+                                <strong>Het verzamelen van data</strong>
+                                <p>Allright, we weten al iets meer over de verschillende termen uit de wereld van data. Het allerbelangrijkste is dat we nu weten dat data dus een verzameling van gegevens is dat gebruikt wordt om keuzes te maken. Een logische vraag die dan opkomt is waar deze gegevens vandaan komen?</p>
+                                <p>Een van de eerste dingen dat ik leerde tijdens mijn opleiding was dat design overal om je heen is. Alle voorwerpen, zoals een website, boek, tijdschrift, verpakking, verkeersbord, sticker, video, kledingstuk is ooit door iemand bedacht en ontworpen. Ik weet nog heel goed dat de dagen hierna ik totaal gefascineerd was door alles wat ik tegenkwam. Tijdens het douchen kon ik minuten lang gefascineerd nadenken over welke beslissingen de designer van mijn shampoo flesje had genomen en hoe ik dat zelf zou hebben gedaan. Het beantwoorden van de vraag waar data vandaag komt was voor mij met deze ervaring te vergelijken.</p>
+                                <p>Natuurlijk weet jij dat bedrijven en overheden data verzamelen van jou. Dus als we de vraag heel kort zouden beantwoorden dan is het antwoord: de gegevens worden van jou verzamelt. Je hebt waarschijnlijk ook wel eens gehoord over hoe er in een paar milliseconde voordat je een website opent er een veilig wordt gehouden tussen bedrijven over wie er een advertentie aan jou mag presenteren. Maar wat je misschien niet weet is dat jij dagelijks veel vaker betaald met je data dan met je pinpas van de Rabobank. Wie betaald er nog voor programma’s/tools/diensten op het internet? Stel je voor dat je zou moeten betalen om een mail te sturen, een YouTube video te kijken of een twitter post te sturen. Al deze programma’s/tools/diensten worden niet betaald door jou met geld maar met je data.</p>
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5pFX2P7JLwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <strong class="omschrijving_titel">Video: doemdenken over data</strong>
+                                <p class="omschrijving">Zoals in de video wordt omschreven is het internet een grote big brother reality show, en wij zijn allemaal deelnemers. In deze voorbeelden hebben we het alleen nog maar over de plekken waar jij vrijwillig je data hebt afgestaan (ook al wist je daar niets van). Er zijn ook nog ontzettend veel voorbeelden van datalekken. Hackers, bedrijven of overheden die jouw data onderscheppen zonder toestemming. Ben jij benieuwd welke data er van jou op straat ligt? Op deze website kan je door middel van je email uitzoeken of er data van jou gelekt is.</p>
+                                <p>De bovenstaande voorbeelden gingen voornamelijk over het verzamelen van data voor adverteerders, maar er zijn ook andere voorbeelden. De onderstaande video gaat over hoe jij en ik onbewust meewerken aan het maken van data driven technologieën.</p>
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1-cZkc7gyfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <strong class="omschrijving_titel">Video: wat je echt aan het doen bent</strong>
+                                <p class="omschrijving">Ik vond het zelf heel interresant om te ontdekken dat de reCAPTCHA van Google bedoelt is om hun Image Recognicion Software te verbeteren.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" class="col-12"> 
+                            <h2>Section 3</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra nulla in urna sodales blandit. Pellentesque ac cursus purus, sit amet semper libero. Integer massa dui, lobortis sit amet dui nec, placerat volutpat purus. Donec vel leo accumsan, bibendum felis eget, mattis nunc. Donec at semper sem. Mauris ornare hendrerit ligula, in scelerisque sapien interdum vitae. Etiam non congue ligula. Etiam est neque, convallis eleifend velit ac, interdum vulputate nunc. Nam bibendum eros ac nunc fringilla sagittis. Sed quis suscipit augue, nec ornare odio. Praesent viverra urna a mollis tincidunt. Morbi luctus rutrum massa, sed vestibulum nunc aliquet eu.</p>
+                            <p>Aliquam eu justo tincidunt, pharetra dui euismod, porta erat. Quisque in tellus eget mauris placerat elementum. Morbi vitae ultricies mauris. Etiam cursus commodo nunc non fermentum. Donec iaculis felis sed nunc ullamcorper, vel blandit augue vehicula. Pellentesque felis urna, auctor id rhoncus sed, luctus at mi. Nam faucibus vehicula justo, eu lacinia enim placerat sit amet. Donec vel porttitor lorem, nec gravida odio. Proin sodales, sem eget pulvinar consectetur, eros lorem auctor nisi, quis tempus nisi metus in ligula. Donec commodo, purus in tristique porta, lectus libero lacinia turpis, eu tincidunt felis dolor in sapien. Aliquam pulvinar congue elit, ut euismod felis faucibus nec. Duis nec rhoncus nibh. Nam porttitor nisi vel ligula commodo, et fringilla nulla tristique. Nulla sed erat ante.</p>
+                            <p>Morbi eget leo at odio tincidunt condimentum. Quisque ac consectetur nulla. Aliquam a varius risus, commodo rutrum tortor. Donec rhoncus, tortor in blandit iaculis, risus risus vulputate massa, a tristique ante tellus id eros. Sed a turpis nec felis pharetra sollicitudin a vitae magna. Phasellus a tortor mollis, dignissim arcu sit amet, pulvinar massa. Suspendisse potenti. Quisque vel purus ac enim tincidunt convallis. Sed in dolor nec metus condimentum congue.</p>
+                            <p>Nulla tempor dui sed tellus porta dapibus. Pellentesque mauris magna, vestibulum ut nibh ut, feugiat scelerisque eros. Donec cursus pulvinar purus, nec euismod turpis molestie sit amet. Vivamus vitae felis metus. Cras nec ultrices nunc. Donec dolor augue, mattis sit amet dolor vitae, imperdiet ultricies dui. Aliquam libero massa, commodo sed malesuada vitae, interdum eu quam. Maecenas vitae enim a mauris ultricies adipiscing vitae sit amet tortor.</p>
+                            <p>Nam ante lacus, hendrerit id rutrum sodales, scelerisque at dolor. Nullam posuere turpis ac turpis suscipit fringilla. Phasellus dolor elit, pulvinar sit amet sollicitudin sit amet, fringilla nec nunc. Morbi nec justo justo. Ut eu suscipit lorem, at ornare lacus. Maecenas adipiscing volutpat magna, vel porttitor odio adipiscing at. Aliquam erat volutpat. Mauris rutrum tempor congue. Donec accumsan ligula magna, nec vulputate nunc consequat in. Integer porta sagittis auctor. Donec non auctor turpis, eget mollis tortor. Nunc nec urna auctor quam ultricies aliquet. Phasellus aliquet vel sem sit amet mollis. Cras vel cursus quam, quis venenatis nulla.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+        <footer class="container">
+            <div class="row col-centered">
+                <div class="col-4 col-centered">
+                    <h2>#keeponexploring</h2>
+                    <span style="font-size: 5em;"><i class="fad fa-user-astronaut"></i></span>
+                    <p>“I’m always trying new things and learning new things. If there isn’t anything more you can learn – go off and die.”</p>
+                    <p>— Morgan Freeman</p>
+                </div>
+                <div class="col-12">
+                    <p class="copyright">© Copyright 2020 | Timo Vossen | All Rights Reserved | <a href="https://timovossen.nl/wp-content/uploads/2019/09/Privacyverklaring.docx">Privacyverklaring</a></p>
+                </div>     
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
